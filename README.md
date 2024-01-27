@@ -21,15 +21,20 @@
 
 - Vue.js
     - 公式サイト: https://ja.vuejs.org/
+    - https://ja.vuejs.org/guide/introduction.html
 - Vue Router
     - ルーティング機能
+    - アプリを作ったら、画面遷移の機能
+    - SPA画面を変えることであたかもページを変えたような
 - Vue CLI / Vite(Vue3推奨)
     - プロジェクト管理ツール
     - [Vue CLI->Vite推奨](https://vuejs.org/guide/scaling-up/tooling.html)
 - Vuex / Pinia(Vue3推奨)
     - 状態管理ツール
+    - 情報を管理する　セッション
 - Vuetify
     - UIライブラリ（マテリアルデザイン）
+    - Bootstrap
 - Typescript
     - 公式サイトはJavascriptで表現されていることが多い
     - 開発現場ではTypescriptを利用していることが多い
@@ -40,10 +45,14 @@ https://v3-migration.vuejs.org/
 
 ### Vue3の特徴
 
-- Options API / Composition API
+- Options API / Composition API 
     - https://ja.vuejs.org/guide/extras/composition-api-faq.html
+    - Composition API 利用する方が多い
+ 
 - refを使う理由
     - https://ja.vuejs.org/guide/essentials/reactivity-fundamentals
+    - vue2の時はなかったが、変数を定義する時にrefを使うオブジェクトとして使うことができる
+    - constは参照
 
 # 開発ツール
 
