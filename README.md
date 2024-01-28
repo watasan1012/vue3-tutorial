@@ -48,6 +48,7 @@ https://v3-migration.vuejs.org/
 - Options API / Composition API 
     - https://ja.vuejs.org/guide/extras/composition-api-faq.html
     - Composition API の方が新しく利用する方が多い
+    - Options APIの問題点として、リアクティブな値にアクセスするためには、thisによるアクセスが必要となり、Viewと分離ができないという点があります。
  
 - refを使う理由
     - https://ja.vuejs.org/guide/essentials/reactivity-fundamentals
