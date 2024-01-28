@@ -47,7 +47,7 @@ https://v3-migration.vuejs.org/
 
 - Options API / Composition API 
     - https://ja.vuejs.org/guide/extras/composition-api-faq.html
-    - Composition API 利用する方が多い
+    - Composition API の方が新しく利用する方が多い
  
 - refを使う理由
     - https://ja.vuejs.org/guide/essentials/reactivity-fundamentals
