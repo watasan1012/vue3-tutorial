@@ -70,10 +70,10 @@ const count = ref(0);
 
 Composition API の方が新しく利用する方が多い
 
-Composition API ステートフルなロジックをカプセル化することを Composable(コンボーサブル) と呼び、Composable は import を経由して呼び出しが可能です。
+Composition API ステートフルなロジックをカプセル化することを Composable(コンボーサブル) と呼び、Composable は import を経由して呼び出しが可能です。  
 Composition APIではref・reactive関数を定義し使用します 
  
-ref ➝ 直接アクセス可能（プリミティブ型）
+ref ➝ 直接アクセス可能（プリミティブ型）  
 reactive ➝ オブジェクトのように 『.(ドット)』を使用してアクセスする
 
 refを使う理由
