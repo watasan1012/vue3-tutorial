@@ -45,15 +45,40 @@ https://v3-migration.vuejs.org/
 
 ### Vue3の特徴
 
-- Options API / Composition API 
-    - https://ja.vuejs.org/guide/extras/composition-api-faq.html
-    - Composition API の方が新しく利用する方が多い
-    - Options APIの問題点として、リアクティブな値にアクセスするためには、thisによるアクセスが必要となり、Viewと分離ができないという点があります。
+- Options API / Composition API
+
+- Options API
+
+vue2 までは Options API 使われていた。
+リアクティブな値にアクセスするためにはthisにアクセスを必須となり、Viewと分離ができないという点があります。
+
+```
+data: () => {
+  return {
+    count: 0
+  };
+}
+```
+
+- Composition API
+
+```
+import { ref } from "vue"
  
-- refを使う理由
-    - https://ja.vuejs.org/guide/essentials/reactivity-fundamentals
-    - vue2の時はなかったが、変数を定義する時にrefを使うオブジェクトとして使うことができる
-    - constは参照
+const count = ref(0);
+```
+
+Composition API の方が新しく利用する方が多い
+
+Composition API ステートフルなロジックをカプセル化することを Composable(コンボーサブル) と呼び、Composable は import を経由して呼び出しが可能です。
+Composition APIではref・reactive関数を定義し使用します 
+ 
+ref ➝ 直接アクセス可能（プリミティブ型）
+reactive ➝ オブジェクトのように 『.(ドット)』を使用してアクセスする
+
+refを使う理由
+https://ja.vuejs.org/guide/essentials/reactivity-fundamentals
+
 
 # 開発ツール
 
